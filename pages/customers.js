@@ -1,29 +1,29 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Layout from "../layouts/Layout";
 import Sidebar from "../layouts/Sidebar";
+import Header from "../layouts/Header";
 import { useRouter } from "next/router";
 
-export default function Home() {
+const Customers = () => {
     const router = useRouter();
     return (
-        <div className={styles.container}>
-            {" "}
-            base pagee{" "}
+        <div>
+            customers pagee{" "}
             <button
                 onClick={() => {
-                    router.push("/customers");
+                    router.push("/");
                 }}
             >
                 Route
             </button>
         </div>
     );
-}
+};
 
-Home.getLayout = (page) => (
+export default Customers;
+
+Customers.getLayout = (page) => (
     <Layout>
+        <Header />
         <Sidebar />
         {page}
     </Layout>
