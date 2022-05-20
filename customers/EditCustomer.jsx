@@ -8,7 +8,7 @@ const EditCustomer = () => {
     const [date, setDate] = useState(new Date());
     const [currencyOptions, setcurrencyOptions] = useState([
         { id: 1, text: "Select Currency" },
-        { id: 2, text: "EUR Euro" },
+        { id: 2, text: "     Euro" },
         { id: 3, text: "INR Indoan Rupee" },
         { id: 4, text: "USD- US Dollar" },
     ]);

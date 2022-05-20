@@ -321,6 +321,9 @@ table.table td h2 span {
 	font-size: 12px;
 	margin-top: 3px;
 } 
+table.table td h2 div {
+	vertical-align: middle;
+} 
 .table thead {
     background-color: transparent;
     border-bottom: 0;
