@@ -2,29 +2,23 @@ import Layout from "../layouts/Layout";
 import Sidebar from "../layouts/Sidebar";
 import Header from "../layouts/Header";
 import { useRouter } from "next/router";
+import Customers from "../customers/Index";
 
-const Customers = () => {
+const CustomersPage = () => {
     const router = useRouter();
     return (
         <div>
-            customers pagee{" "}
-            <button
-                onClick={() => {
-                    router.push("/");
-                }}
-            >
-                Route
-            </button>
+            <Customers />
         </div>
     );
 };
 
-export default Customers;
-
-Customers.getLayout = (page) => (
+CustomersPage.getLayout = (page) => (
     <Layout>
         <Header />
         <Sidebar />
         {page}
     </Layout>
 );
+
+export default CustomersPage;

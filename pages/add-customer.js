@@ -1,21 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
 import Layout from "../layouts/Layout";
-import Header from "../layouts/Header";
 import Sidebar from "../layouts/Sidebar";
+import Header from "../layouts/Header";
 import { useRouter } from "next/router";
-import Dashboard from "../dashboard/Index";
+import AddCustomer from "../customers/AddCustomer";
 
-const DashboardPage = () => {
+const AddCustomersPage = () => {
     const router = useRouter();
     return (
         <div>
-            <Dashboard />
+            <AddCustomer />
         </div>
     );
 };
 
-DashboardPage.getLayout = (page) => (
+AddCustomersPage.getLayout = (page) => (
     <Layout>
         <Header />
         <Sidebar />
@@ -23,4 +21,4 @@ DashboardPage.getLayout = (page) => (
     </Layout>
 );
 
-export default DashboardPage;
+export default AddCustomersPage;

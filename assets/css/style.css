@@ -1632,7 +1632,17 @@ button.bg-danger:hover {
 	width: 32px;
     border-radius: 50%;
 }
-.dropdown-item img{
+.flag-img {
+	display: inline-flex;
+	transform: translateY(25%);
+	margin-right: 3px;
+	position: relative;
+}
+
+.dropdown-item .img-div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	margin-right: 5px;
 }
 .user-menu.nav > li > a.mobile_btn {

@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 
 const Sidebar = (props) => {
+    const router = useRouter();
     useEffect(() => {
         var $this = $("#sidebar-menu a");
         var $wrapper = $(".main-wrapper");
         var $slimScrolls = $(".slimscroll");
-
+        console.log(router);
         // Sidebar Slimscroll
         if ($slimScrolls.length > 0) {
             $slimScrolls.slimScroll({
@@ -99,8 +101,7 @@ const Sidebar = (props) => {
         });
     }, []);
 
-    // let pathName = props.location.pathname;
-    let pathName = {};
+    let pathName = router.pathname;
     return (
         <div className="sidebar" id="sidebar">
             <div className="sidebar-inner slimscroll">
@@ -109,12 +110,8 @@ const Sidebar = (props) => {
                         <li className="menu-title">
                             <span>Main</span>
                         </li>
-                        <li
-                            className={`${
-                                "/index" === pathName ? "active" : ""
-                            }`}
-                        >
-                            <Link href="/index">
+                        <li className={`${"/" === pathName ? "active" : ""}`}>
+                            <Link href="/">
                                 <a>
                                     <FeatherIcon icon="home" />{" "}
                                     <span>Dashboard</span>

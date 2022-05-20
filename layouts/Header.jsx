@@ -73,21 +73,55 @@ const Header = () => {
                         href="#"
                         role="button"
                     >
-                        <img src={UsFlag} alt="" height="20" />{" "}
+                        <span className="flag-img">
+                            <Image src={UsFlag} alt="" height="20" width="20" />
+                        </span>{" "}
                         <span>English</span>
                     </a>
                     <div className="dropdown-menu dropdown-menu-right">
                         <a href="#" className="dropdown-item">
-                            <img src={UsFlag} alt="" height="16" /> English
+                            <div className="img-div">
+                                <Image
+                                    src={UsFlag}
+                                    alt=""
+                                    height="16"
+                                    width="16"
+                                />
+                            </div>{" "}
+                            English
                         </a>
                         <a href="#" className="dropdown-item">
-                            <img src={FrFlag} alt="" height="16" /> French
+                            <div className="img-div">
+                                <Image
+                                    src={FrFlag}
+                                    alt=""
+                                    height="16"
+                                    width="16"
+                                />
+                            </div>{" "}
+                            French
                         </a>
                         <a href="#" className="dropdown-item">
-                            <img src={EsFlag} alt="" height="16" /> Spanish
+                            <div className="img-div">
+                                <Image
+                                    src={EsFlag}
+                                    alt=""
+                                    height="16"
+                                    width="16"
+                                />
+                            </div>{" "}
+                            Spanish
                         </a>
                         <a href="#" className="dropdown-item">
-                            <img src={DeFlag} alt="" height="16" /> German
+                            <div className="img-div">
+                                <Image
+                                    src={DeFlag}
+                                    alt=""
+                                    height="16"
+                                    width="16"
+                                />
+                            </div>{" "}
+                            German
                         </a>
                     </div>
                 </li>
