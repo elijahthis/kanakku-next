@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import recentinvoices from "../json/recentinvoices";
 import recentestimates from "../json/recentestimates";
@@ -572,13 +573,17 @@ const Dashboard = () => {
                                                                 <h2 className="table-avatar">
                                                                     <Link href="/profile">
                                                                         <a>
-                                                                            <img
-                                                                                className="aavatar avatar-sm mr-2 avatar-img rounded-circle"
-                                                                                src={
-                                                                                    item.image
-                                                                                }
-                                                                                alt="User Image"
-                                                                            />
+                                                                            <div className="mr-2 w-10 h-10 inline avatar avatar-sm avatar-img">
+                                                                                <Image
+                                                                                    width="40"
+                                                                                    height="40"
+                                                                                    className="rounded-circle"
+                                                                                    src={
+                                                                                        item.image
+                                                                                    }
+                                                                                    alt="User Image"
+                                                                                />
+                                                                            </div>
                                                                             {
                                                                                 item.customer_name
                                                                             }
@@ -768,13 +773,17 @@ const Dashboard = () => {
                                                             <td>
                                                                 <h2 className="table-avatar">
                                                                     <a href="/profile">
-                                                                        <img
-                                                                            className="aavatar avatar-sm mr-2 avatar-img rounded-circle"
-                                                                            src={
-                                                                                item.image
-                                                                            }
-                                                                            alt="User Image"
-                                                                        />
+                                                                        <div className="mr-2 w-10 h-10 inline avatar avatar-sm avatar-img">
+                                                                            <Image
+                                                                                width="40"
+                                                                                height="40"
+                                                                                className="rounded-circle"
+                                                                                src={
+                                                                                    item.image
+                                                                                }
+                                                                                alt="User Image"
+                                                                            />
+                                                                        </div>
                                                                         {
                                                                             item.customer_name
                                                                         }
