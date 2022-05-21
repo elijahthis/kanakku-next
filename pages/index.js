@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Head from "next/head";
 import Image from "next/image";
 import Layout from "../layouts/Layout";
 import Header from "../layouts/Header";
