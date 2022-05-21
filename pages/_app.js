@@ -6,7 +6,6 @@ if (typeof window !== "undefined") {
     require("../styles/globals.css");
     require("../assets/css/style.css");
 }
-import Head from "next/head";
 // boostrap
 //Datatable Modules
 import DataTable from "datatables.net";

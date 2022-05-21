@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Head from "next/head";
 import Image from "next/image";
 import Layout from "../layouts/Layout";
 import Header from "../layouts/Header";
@@ -10,6 +11,14 @@ const DashboardPage = () => {
     const router = useRouter();
     return (
         <div>
+            <Head>
+                <title>Kanakku</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
             <Dashboard />
         </div>
     );

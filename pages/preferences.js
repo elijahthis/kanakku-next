@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../layouts/Layout";
 import Sidebar from "../layouts/Sidebar";
 import Header from "../layouts/Header";
@@ -8,7 +9,19 @@ import Preferences from "../settings/Preferences";
 
 const PreferencesPage = () => {
     const router = useRouter();
-    return <Preferences />;
+    return (
+        <>
+            <Head>
+                <title>Kanakku</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
+            <Preferences />
+        </>
+    );
 };
 
 PreferencesPage.getLayout = (page) => (
