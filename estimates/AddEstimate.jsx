@@ -36,7 +36,7 @@ const AddEstimate = () => {
                             <h3 className="page-title">Estimate</h3>
                             <ul className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                    <Link href="/index">
+                                    <Link href="/">
                                         <a>Dashboard</a>
                                     </Link>
                                 </li>

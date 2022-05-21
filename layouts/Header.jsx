@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-left">
-                <Link href="/index">
+                <Link href="/">
                     <a className="logo">
                         <Image
                             src={LogoImg}
@@ -32,7 +32,7 @@ const Header = () => {
                         />
                     </a>
                 </Link>
-                <Link href="/index">
+                <Link href="/">
                     <a className="logo logo-small">
                         <Image
                             src={LogoSmallImg}

@@ -43,7 +43,7 @@ const Estimates = () => {
                             <h3 className="page-title">Estimates</h3>
                             <ul className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                    <Link href="/index">
+                                    <Link href="/">
                                         <a>Dashboard</a>
                                     </Link>
                                 </li>

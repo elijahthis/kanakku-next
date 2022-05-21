@@ -37,126 +37,117 @@ const AddPayment = () => {
     };
 
     return (
-        <div className="main-wrapper">
-            <Header />
-            <Sidebar />
-
-            <div className="page-wrapper">
-                <div className="content container-fluid">
-                    <div className="page-header">
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <h3 className="page-title">Payments</h3>
-                                <ul className="breadcrumb">
-                                    <li className="breadcrumb-item">
-                                        <Link href="/index">
-                                            <a>Dashboard</a>
-                                        </Link>
-                                    </li>
-                                    <li className="breadcrumb-item">
-                                        <Link href="/payments">
-                                            <a>Payments</a>
-                                        </Link>
-                                    </li>
-                                    <li className="breadcrumb-item active">
-                                        Add Payments
-                                    </li>
-                                </ul>
-                            </div>
+        <div className="page-wrapper">
+            <div className="content container-fluid">
+                <div className="page-header">
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <h3 className="page-title">Payments</h3>
+                            <ul className="breadcrumb">
+                                <li className="breadcrumb-item">
+                                    <Link href="/">
+                                        <a>Dashboard</a>
+                                    </Link>
+                                </li>
+                                <li className="breadcrumb-item">
+                                    <Link href="/payments">
+                                        <a>Payments</a>
+                                    </Link>
+                                </li>
+                                <li className="breadcrumb-item active">
+                                    Add Payments
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="card">
-                                <div className="card-body">
-                                    <form action="#">
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label>Date:</label>
-                                                    <div className="cal-icon">
-                                                        <DatePicker
-                                                            selected={date}
-                                                            onChange={
-                                                                handleChange
-                                                            }
-                                                            className="form-control datetimepicker"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>Customer:</label>
-                                                    <Select2
-                                                        className="w-100"
-                                                        data={customerOptions}
-                                                        options={{
-                                                            placeholder:
-                                                                "Select Customer",
-                                                        }}
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="card">
+                            <div className="card-body">
+                                <form action="#">
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <label>Date:</label>
+                                                <div className="cal-icon">
+                                                    <DatePicker
+                                                        selected={date}
+                                                        onChange={handleChange}
+                                                        className="form-control datetimepicker"
                                                     />
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>Address:</label>
-                                                    <textarea
-                                                        rows="5"
-                                                        cols="5"
-                                                        className="form-control"
-                                                        placeholder="Enter Address"
-                                                    ></textarea>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label>Amount:</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>
-                                                        Payment Number:
-                                                    </label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>Invoice:</label>
-                                                    <Select2
-                                                        className="w-100"
-                                                        data={invoiceOptions}
-                                                        options={{
-                                                            placeholder:
-                                                                "Select Status",
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>Payment Mode:</label>
-                                                    <Select2
-                                                        className="w-100"
-                                                        data={paymentOptions}
-                                                        options={{
-                                                            placeholder:
-                                                                "Select Status",
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className="text-right mt-4">
-                                                    <button
-                                                        type="submit"
-                                                        className="btn btn-primary"
-                                                    >
-                                                        Add Payments
-                                                    </button>
-                                                </div>
+                                            <div className="form-group">
+                                                <label>Customer:</label>
+                                                <Select2
+                                                    className="w-100"
+                                                    data={customerOptions}
+                                                    options={{
+                                                        placeholder:
+                                                            "Select Customer",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Address:</label>
+                                                <textarea
+                                                    rows="5"
+                                                    cols="5"
+                                                    className="form-control"
+                                                    placeholder="Enter Address"
+                                                ></textarea>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <label>Amount:</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Payment Number:</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Invoice:</label>
+                                                <Select2
+                                                    className="w-100"
+                                                    data={invoiceOptions}
+                                                    options={{
+                                                        placeholder:
+                                                            "Select Status",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Payment Mode:</label>
+                                                <Select2
+                                                    className="w-100"
+                                                    data={paymentOptions}
+                                                    options={{
+                                                        placeholder:
+                                                            "Select Status",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div className="text-right mt-4">
+                                                <button
+                                                    type="submit"
+                                                    className="btn btn-primary"
+                                                >
+                                                    Add Payments
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

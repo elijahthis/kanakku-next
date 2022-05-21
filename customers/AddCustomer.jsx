@@ -33,7 +33,7 @@ const AddCustomer = () => {
                             <h3 className="page-title">Customers</h3>
                             <ul className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                    <Link href="/index">
+                                    <Link href="/">
                                         <a>Dashboard</a>
                                     </Link>
                                 </li>
