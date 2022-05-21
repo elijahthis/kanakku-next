@@ -1,18 +1,15 @@
-module.exports = {
+// @type {import('next').NextConfig}
+
+const withTM = require("next-transpile-modules")([
+    "@fullcalendar/common",
+    "@babel/preset-react",
+    "@fullcalendar/common",
+    "@fullcalendar/daygrid",
+    "@fullcalendar/interaction",
+    "@fullcalendar/react",
+    "@fullcalendar/timegrid",
+]);
+
+module.exports = withTM({
     reactStrictMode: true,
-};
-
-// const webpack = require("webpack");
-
-// module.exports = {
-//     webpack: (config, { dev }) => {
-//         config.plugins.push(
-//             new webpack.ProvidePlugin({
-//                 $: "jquery",
-//                 jQuery: "jquery",
-//             })
-//         );
-//         return config;
-//     },
-//     reactStrictMode: true,
-// };
+});
