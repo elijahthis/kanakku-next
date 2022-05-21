@@ -1085,7 +1085,7 @@ const Components = () => {
                                         <p className="card-text">
                                             Some quick example text to build on
                                             the card title and make up the bulk
-                                            of the card's content.
+                                            of the card&apos;s content.
                                         </p>
                                         <a className="card-link" href="#">
                                             Card link
@@ -1112,7 +1112,7 @@ const Components = () => {
                                         <p className="card-text">
                                             Some quick example text to build on
                                             the card title and make up the bulk
-                                            of the card's content.
+                                            of the card&apos;s content.
                                         </p>
                                         <a className="btn btn-primary" href="#">
                                             Go somewhere
@@ -1158,7 +1158,7 @@ const Components = () => {
                                         <p className="card-text">
                                             Some quick example text to build on
                                             the card title and make up the bulk
-                                            of the card's content.
+                                            of the card&apos;s content.
                                         </p>
                                         <a className="card-link" href="#">
                                             Card link
@@ -1180,7 +1180,7 @@ const Components = () => {
                                         <p className="card-text">
                                             Some quick example text to build on
                                             the card title and make up the bulk
-                                            of the card's content.
+                                            of the card&apos;s content.
                                         </p>
                                         <a className="btn btn-primary" href="#">
                                             Go somewhere
@@ -1222,7 +1222,7 @@ const Components = () => {
                                         <p className="card-text">
                                             Some quick example text to build on
                                             the card title and make up the bulk
-                                            of the card's content.
+                                            of the card&apos;s content.
                                         </p>
                                     </div>
                                     <div className="card-footer text-muted">
@@ -1280,7 +1280,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
@@ -1301,7 +1301,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
@@ -1322,7 +1322,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
@@ -1385,7 +1385,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
@@ -1406,7 +1406,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
@@ -1427,7 +1427,7 @@ const Components = () => {
                                                     Some quick example text to
                                                     build on the card title and
                                                     make up the bulk of the
-                                                    card's content.
+                                                    card&apos;s content.
                                                 </p>
                                                 <a
                                                     className="btn btn-primary"
