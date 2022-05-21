@@ -2,7 +2,7 @@ import Layout from "../layouts/Layout";
 import Sidebar from "../layouts/Sidebar";
 import Header from "../layouts/Header";
 import { useRouter } from "next/router";
-import SalesReport from "../reports/salesReport";
+import SalesReport from "../reports/salesreport";
 
 const SalesReportPage = () => {
     const router = useRouter();
