@@ -1,4 +1,6 @@
 // @type {import('next').NextConfig}
+const webpack = require("webpack");
+const { parsed: myEnv } = require("dotenv").config();
 
 const withTM = require("next-transpile-modules")([
     "@fullcalendar/common",
@@ -11,5 +13,9 @@ const withTM = require("next-transpile-modules")([
 ]);
 
 module.exports = withTM({
+    webpack(config) {
+        config.plugins.push(new webpack.EnvironmentPlugin(myEnv));
+        return config;
+    },
     reactStrictMode: true,
 });

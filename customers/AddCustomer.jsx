@@ -23,6 +23,42 @@ const AddCustomer = () => {
         { id: 8, text: "Anguilla" },
         { id: 9, text: "United States" },
     ]);
+    const [formData, setFormData] = useState({
+        firstname: "Femi",
+        lastname: "Peter",
+        display_name: "Femi Peter",
+        email: "femipeter10@mail.com",
+        phone: "09090909092",
+    });
+
+    useEffect(() => {
+        console.log(process.env.NEXT_PUBLIC_BASE_URL);
+    }, []);
+
+    const token =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTQ4ZjhhMGUxMDA2MzBkZmVkNTJlNCIsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTFUMjA6Mjg6NTguNjc3WiIsImlh...";
+    const sendData = () => {
+        fetch(
+            `https://paymax-sales-service.herokuapp.com/api/v1/customer/create`,
+            {
+                headers: {
+                    // Authorization: `Bearer ${token}`,
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    firstname: "Femi",
+                    lastname: "Peter",
+                    display_name: "Femi Peter",
+                    email: "femipeter10@mail.com",
+                    phone: "09090909092",
+                }),
+            }
+        )
+            .then((res) => console.log(res))
+            .catch((err) => console.log(err));
+    };
 
     return (
         <div className="page-wrapper">
@@ -249,8 +285,9 @@ const AddCustomer = () => {
                                     </div>
                                     <div className="text-right mt-4">
                                         <button
-                                            type="submit"
+                                            // type="submit"
                                             className="btn btn-primary"
+                                            onClick={sendData}
                                         >
                                             Add Customer
                                         </button>

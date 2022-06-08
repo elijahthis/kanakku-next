@@ -10,15 +10,15 @@ const Login = (props) => {
             <div className="main-wrapper login-body">
                 <div className="login-wrapper">
                     <div className="container">
-                        <span className="img-fluid logo-dark mb-2">
+                        {/* <span className="img-fluid logo-dark mb-2">
                             <Image src={Logo} alt="Logo" />
-                        </span>
+                        </span> */}
                         <div className="loginbox">
                             <div className="login-right">
                                 <div className="login-right-wrap">
                                     <h1>Login</h1>
                                     <p className="account-subtitle">
-                                        Access to our dashboard
+                                        Making app management easy and fun!
                                     </p>
                                     <div>
                                         <div className="form-group">
@@ -28,6 +28,7 @@ const Login = (props) => {
                                             <input
                                                 type="email"
                                                 className="form-control"
+                                                placeholder="Enter Email"
                                             />
                                         </div>
                                         <div className="form-group">
@@ -38,6 +39,7 @@ const Login = (props) => {
                                                 <input
                                                     type="password"
                                                     className="form-control pass-input"
+                                                    placeholder="Enter password"
                                                 />
                                                 <span className="fas fa-eye toggle-password" />
                                             </div>
@@ -77,12 +79,12 @@ const Login = (props) => {
                                         >
                                             Login
                                         </button>
-                                        <div className="login-or">
+                                        {/* <div className="login-or">
                                             <span className="or-line" />
                                             <span className="span-or">or</span>
-                                        </div>
+                                        </div> */}
                                         {/* Social Login */}
-                                        <div className="social-login mb-3">
+                                        {/* <div className="social-login mb-3">
                                             <span>Login with</span>
                                             <a href="#" className="facebook">
                                                 <i className="fab fa-facebook-f" />
@@ -90,7 +92,7 @@ const Login = (props) => {
                                             <a href="#" className="google">
                                                 <i className="fab fa-google" />
                                             </a>
-                                        </div>
+                                        </div> */}
                                         {/* /Social Login */}
                                         <div className="text-center dont-have">
                                             Don't have an account yet?{" "}
